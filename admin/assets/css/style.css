@@ -1,0 +1,107 @@
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.page-header h2 {
+    margin-top: 0;
+}
+
+table tr td:last-child a {
+    margin-right: 15px;
+}
+
+.btn-xoa,
+.btn-sua {
+    color: black;
+}
+
+.btn-xoa:hover {
+    color: red;
+    opacity: 0.8;
+}
+
+.btn-sua:hover {
+    color: blue;
+    opacity: 0.8;
+}
+
+.pagination {
+    justify-content: flex-end;
+}
+
+/* thiết lập style cho thẻ a */
+.pagination a {
+    color: black;
+    margin: 0 1px;
+    border: 1px solid;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+/* thiết lập style cho class active */
+.pagination a.active {
+    background-color: #1f3a36;
+    color: white;
+}
+
+/* thêm màu nền khi người dùng hover vào class không active */
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    cursor: pointer;
+}
+
+.ellipsis:hover::before {
+    content: attr(title_show);
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    white-space: pre-line;
+    bottom: 100%;
+}
+
+
+
+
+.status_order{
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 140px;
+    height: 30px;
+    padding: 3px 0;
+    color: white;
+}
+
+  
+
+
+
+.table td{
+    vertical-align: inherit;
+}
+
+.clearfix::after {
+    display: none;
+}
+
+
+
+.sidebar-dark .nav-item.active .nav-link, .sidebar-dark .nav-item.active .nav-link i {
+    color: #00FFFF;
+}
